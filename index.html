@@ -1,0 +1,207 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+        <script src="https://kit.fontawesome.com/39db787642.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+        
+        <title>Svetlyachok</title>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+                <div class="logo">
+                    <a href="index.html">Светлячок</a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="">
+                        <button id="search-but" type="submit"></button>
+                    </form>
+                </div>
+                <div class="cart">
+                    <img src="assets/images/cart%20icon.jpg" usemap="#shopcart" alt="Корзина">
+					<map name="shopcart">
+					<area shape="rect" coords="0,0,41,37" href="home.html" alt="Корзина" target="_blank">
+					</map>
+                </div>
+                <div class="count">
+                    1000p
+                        |   
+                <button onclick="show('block')" class="regButton">Регистрация</button>
+                     <!-- Затемнение -->
+                      <div id="gray">
+                            <div id="window_reg">
+                               <img class="close_form_reg" src="assets/images/close.png" alt="x" onclick="show('none')"> 
+                               <div class="form_reg">
+
+                                    <h2>Регистрация</h2>
+                                    <form action="home.html" name="registration">
+                                        <input type="text" placeholder="Фамилия" name="ln" class="input_reg">
+                                        <input type="text" placeholder="Имя" name="fn" class="input_reg">
+                                        <input type="text" placeholder="Введите логин" name="login" class="input_reg">
+                                        <input type="text" placeholder="Введите пароль" name="password" class="input_reg">
+                                        <input type="text" placeholder="Повторите пароль" name="password_check" class="input_reg">
+                                        <input type="text" placeholder="Email" name="email" class="input_reg">
+                                        <input type="text" placeholder="Номер телефона" name="phone" class="input_reg">
+                                        <input type="radio" name="choosegender" value="man"> Мужчина 
+                                        <input type="radio" name="choosegender" value="female" class="gender"> Женщина
+                                        <input type="submit" value="Зарегистрироваться" name="reg" class="input_reg"> Нажимая кнопку "Зарегистрироваться", вы подтверждаете, что прочитали и согласны с нашими <a href="" target="_blank">Условиями Пользования и Политикой Конфиденциальности</a>.
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                </div>
+        </div>
+        
+        <section class="navigation">
+        <div class="container__nav">
+            
+            <div class="nav">
+                
+                <ul>
+                    <li><a href="catalog.html">каталог</a></li>
+                    <li><a href="">акции</a></li>
+                    <li><a href="">адреса магазинов</a></li>
+                    <li><a href="">пункты выдачи</a></li>
+                    <li><a href="">сервисы</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+                
+            </div>      
+        </div>
+        </section>
+        
+		<section class="intro">
+        <div class="container__intro">
+		
+            <div class="intro__image">
+				<img src="assets/images/Лампа свд osram 220B.png">
+			</div>
+			<div class="intro__title">
+				<p class="banner-text">OSRAM лампа СВД</p>
+				
+				<p class="banner-desc-text">Лампа светодиодная Osram LEDSCLP60 6,5W/840 
+				230V FR E27 (P45 шар, 6,5 Вт, E27, 550 лм), цвет 
+				свечения нейтральный белый</p>
+                <form action="product.html">
+				<button class="button__intro">купить</button>
+                </form>
+            </div>
+			
+        </div>
+        </section>
+		
+		<section class="recent">
+		<div class="container__recent">
+		
+		<div class="recent_1">
+			
+			<img src="assets/images/лампа настольная 40вт е27.jpg"
+			height="180">
+			
+			<p class="recent_text">Лампа настольная</p>
+			<button class="button__recent_1">купить</button>
+			
+		</div>
+		
+		<div class="recent_2">
+		
+			<img src="assets/images/Дифавтомат 2Р 16А C 30мА 4,5кА ДИФ-103 Schneider Electric DEKraft.jpg"
+			height="180">
+			
+			<p class="recent_text">Дифавтомат</p>
+			<button class="button__recent_2">купить</button>
+			
+		</div>
+		</div>
+		</section>
+		
+		<section class="recomm__title">
+		<div class="container__recomm__title">
+			<p>рекомендуемые продукты</p>
+		</div>
+		</section>
+		<section class="sect_recomm_1">
+		<div class="recomm__products_1">
+		
+			<div class="recomm_1">
+				<p align="center"><img src="assets/images/Пост кнопочный ПКТ-63 IP54 IEK 6кнопок.jpg" height="160"></p>
+				<p class="recom_name" align="center">ПОСТ ПКТ-63 IP54 IEK</p>
+				<p class="recom_price">1073Р.</p>
+				<a class="but_rec" href="">купить</a>
+				
+			</div>
+			<div class="recomm_2">
+				<p align="center"><img src="assets/images/Предохранитель ПАР-10.jpg" height="160"></p>
+				<p class="recom_name" align="center">Предохранитель ПАР-10</p>
+				<p class="recom_price">109Р.</p>
+				<a class="but_rec" href="">купить</a>
+			</div>
+			<div class="recomm_3">
+				<p align="center"><img src="assets/images/Светильник точечный GX53 круг бронза встраиваемый.jpg" height="160"></p>
+				<p class="recom_name" align="center">светильник gx53</p>
+				<p class="recom_price">99Р.</p>
+				<a class="but_rec" href="">купить</a>
+			</div>
+        </div>
+        </section>
+		<section class="sect_recomm_2">
+			<div class="recomm__products_2">
+			
+			<div class="recomm_4">
+				<p align="center"><img src="assets/images/Бланка розетка скрытая белый 1-мест заземление IP20.jpg" height="160"></p>
+				<p class="recom_name" align="center">розетка ip20</p>
+				<p class="recom_price">94Р.</p>
+				<a class="but_rec" href="">купить</a>
+			</div>
+			<div class="recomm_5">
+				<p align="center"><img src="assets/images/Лента монтажная для теплых полов (10м).jpg" height="160"></p>
+				<p class="recom_name" align="center">лента монтажная</p>
+				<p class="recom_price">161Р.</p>
+				<a class="but_rec" href="">купить</a>
+			</div>
+			<div class="recomm_6">
+				<p align="center"><img src="assets/images/Счетчик воды гор. (комплект).jpg" height="160"></p>
+				<p class="recom_name" align="center">счетчик воды</p>
+				<p class="recom_price">726Р.</p>
+				<a class="but_rec" href="">купить</a>
+			</div>
+		</div>
+		</section>
+		
+		<section class="section_copyright">
+		<div class="copyright">
+			<p>Copyright © 2021 Fedoseev Yakov</p>
+		</div>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+        //Функция показа
+            function show(state)
+            {
+                document.getElementById('window_reg').style.display = state;
+                document.getElementById('gray').style.display = state;
+            }
+        </script>
+   
+
+
+    </body>
+    
+</html>

@@ -1,0 +1,729 @@
+/* Верхняя панель */
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: dodgerblue;
+    background: linear-gradient(180deg, #0B2349 33%, #fcff00 90%, #fcff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cart {
+    position: relative;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.count {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+    font-family: 'Bahnschrift';
+    font-size: 16;
+}
+
+.count a {
+    text-decoration: none;
+    color: #456da0;
+    
+}
+
+.count a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Строка поиска */
+
+* {box-sizing: border-box;}
+.search form {
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 430px;
+    margin-top: 26px;
+    margin-left: 90px;
+}
+.search input, button {
+  outline: none;
+  background: transparent;
+}
+.search input{
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid #d2d1d1;
+}
+#search-but{
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+#search-but:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #d2d1d1;
+}
+.search input:focus {
+  border-color: #5e799c;
+}
+
+
+/* Панель навигации */
+.container__nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: #5e799c;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: #5e799c;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5e799c;
+}
+
+.nav li {
+	align-content: center;
+	align-items: center;
+    float: left;
+}
+
+.nav li a {
+	text-align:center;
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 17px;
+	text-transform: uppercase;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-right: 32.2px;
+	padding-left: 32.2px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    text-decoration: none;
+	
+}
+
+.nav li a:hover {
+    background-color: #111;
+}
+
+/* Регистрация */
+
+.regButton {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.regButton:hover {
+    background: #ccc;
+}
+
+#window_reg{
+    width: 450px;
+    height: 560px;
+    margin: 40px auto;
+    background: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+}
+
+#gray{
+    background-color: rgba(1,1,1,0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+}
+
+.form_reg {
+    width: 275px;
+    margin: -15px auto 20px auto;
+    text-align: center;
+}
+
+.close_form_reg {
+    margin: 10px 0 0 420px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: #ccc;
+}
+
+.close_form_reg:hover {
+    background: white;
+}
+
+.input_reg {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.gender {
+    margin-bottom: 10px;
+}
+
+
+/* Интро */
+
+.intro {
+	background-color: #456da0;
+}
+
+.container__intro {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: #456da0;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+	justify-content: space-between;
+}
+
+.intro__image {
+	padding-right: 100px;
+	padding-bottom: 60px;
+	padding-left: 60px;
+}
+
+.intro__title {
+	position: relative;
+	margin-bottom: 160px;
+}
+
+.banner-text {
+	text-transform: uppercase;
+	font-size: 40px;
+    font-weight: regular;
+    color: #fff;
+    font-family: 'Bahnschrift';
+    max-width: 400px;
+    line-height: 70px;
+	padding-top: 35px;
+}
+
+.banner-desc-text {
+
+	font-family: 'Bahnschrift';
+	max-width: 400px;
+}
+
+
+.intro__button {}
+
+.button__intro {
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 20pt;
+	color: #456da0;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*padding: .8em 1em calc(.8em + 3px);*/
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	background: #ffffff;
+	box-shadow: 0 -3px #cacfd7 inset;
+	transition: 0.2s;
+	margin-top: 30px;
+}
+.button__intro:hover {
+	background: #cacfd7;
+}
+
+.button__intro:active {
+	background: #ebf1f9;
+	box-shadow: 0 3px #c6cbd1 inset;
+}
+
+/* Блок с популярными товарами */
+
+.container__recent {
+	display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+	justify-content: space-between;
+	text-transform: uppercase;
+	padding: 40px 20px;
+}
+
+.recent_1 {
+	display: flex;
+	
+	
+	align-content: center;
+    align-items: center;
+	
+	max-width: 512px;
+	max-height: 256px;
+	margin: 0 auto;
+	
+}
+.recent_2 {
+	display: flex;
+	
+	align-content: center;
+    align-items: center;
+	
+	max-width: 512px;
+	max-height: 256px;
+	margin: 0 auto;
+	
+}
+
+.recent_text {
+	font-family: 'Bahnschrift';
+	font-size: 18pt;
+	font-weight: bold;
+	max-width: 140px;
+	
+}
+
+.button__recent_1 {
+	position: relative;
+	right: 30%;
+	top:70px;
+	
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*padding: .8em 1em calc(.8em + 3px);*/
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+	background: #456da0;
+	box-shadow: 0 -3px #cacfd7 inset;
+	transition: 0.2s;
+}
+.button__recent_1:hover {
+	background: #cacfd7;
+}
+
+.button__recent_1:active {
+	background: #ebf1f9;
+	box-shadow: 0 3px #c6cbd1 inset;
+}
+
+.button__recent_2 {
+	position: relative;
+	right: 30%;
+	top: 70px;
+	
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*padding: .8em 1em calc(.8em + 3px);*/
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+	background: #456da0;
+	box-shadow: 0 -3px #cacfd7 inset;
+	transition: 0.2s;
+}
+.button__recent_2:hover {
+	background: #cacfd7;
+}
+
+.button__recent_2:active {
+	background: #ebf1f9;
+	box-shadow: 0 3px #c6cbd1 inset;
+}
+
+/* Рекомендуемые продукты */
+
+.recomm__title {
+	background-color: #456da0;
+}
+
+.container__recomm__title {
+	display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+	padding: 30px;
+	background-color: #456da0;
+	
+	
+	text-transform: uppercase;
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 18pt;
+	color: white;
+}
+
+.recomm__products_1 {
+	display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 1024px;
+    max-height: 100%;
+	margin: 0 auto;
+}
+
+.recomm_1 {
+	width: 300px;
+	height: 300px;
+	margin: 5% auto;
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+.recomm_2 {
+	width: 300px;
+	height: 300px;
+
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+.recomm_3 {
+	width: 300px;
+	height: 300px;
+	margin: 5% auto;
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+
+.recomm__products_2 {
+	display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 1024px;
+    max-height: 100%;
+	margin: 0 auto;
+}
+
+.recomm_4 {
+	width: 300px;
+	height: 300px;
+	margin: 5% auto;
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+
+.recomm_5 {
+	width: 300px;
+	height: 300px;
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+
+.recomm_6 {
+	width: 300px;
+	height: 300px;
+	margin: 5% auto;
+	
+	border-width: 3px 3px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-bottom: 5px solid #4582a0;
+}
+
+.but_rec {
+	text-align:center;
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 15px;	
+	text-transform: uppercase;
+    display: block;
+    color: #afafaf;
+    text-align: center;
+
+    text-decoration: none;
+}
+
+.recom_name {
+	text-align:center;
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #afafaf;
+}
+
+.recom_price {
+	text-align:center;
+	font-family: 'Bahnschrift';
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #afafaf;
+}
+
+.section_copyright {
+	background-color: #2e5a92;
+	color: white;
+	max-height: 100%;
+}
+
+.copyright {
+	margin: 0 auto;
+	width: 1024px;
+	height: 50px;
+	text-align: center;
+	font-family: 'Myriad Pro';
+	font-size: 15pt;
+	font-weight: regular;
+	color: white;
+	background-color: #2e5a92;
+}
+
+/* Каталог */
+
+.container__catalog {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1024px;
+    max-height: 1000px;
+    margin: 0 auto;
+
+}
+
+.cat {
+    max-width: 1024px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.electro {
+    
+}
+
+.sveto {
+    
+}
+
+.secure {
+    
+}
+
+.fst {
+    font-size: 18pt;
+    font-family: 'Bahnschrift';
+    font-weight: bold;
+}
+
+.scnd {
+    font-size: 14pt;
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+}
+
+
+.cat a {
+    text-decoration: none;
+    color: #5e799c;
+}
+.cat a:hover {
+    color: cornflowerblue;
+}
+.cat a:active {
+    color: aqua;
+}
+
+/* Страница продукта */
+
+.container__product {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    max-width: 1024px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.prod_desc {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.product_title {
+    margin: 5% auto;
+    
+    font-family: 'Bahnschrift';
+    font-size: 36;
+}
+
+.product_img {
+    width: 50%;
+    
+    border: 1px solid gray;
+}
+
+.product_img img {
+    display: block;
+    margin: auto;
+}
+
+.product_char {
+    width: 50%;
+    
+    margin-top: 0%;
+    
+    font-family: 'Bahnschrift';
+    font-size: 16;
+}
+
+.product_price {
+    width: 30%;
+    
+    margin-top: 5%;
+    
+    padding-top: 2%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-content: center;
+    align-items: center;
+    
+    font-family: 'Bahnschrift';
+    font-size: 20;
+    
+    
+    border: 3px solid #456da0;
+}
+
+.line-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.span1 {
+    width: 70%;
+    
+    border: 1px solid gray;
+    border-right: 0px;    
+}
+
+.span2 {
+    width: 40%;
+    
+    border: 1px solid gray;
+    border-left: 0px;
+}
+
+
+#price {
+    font-size: 25;
+    font-weight: bold;
+}
+
+.button_to-cart {
+    font-family: 'Bahnschrift';
+    font-weight: 500;
+    font-size: 15;
+    
+    width: 80%;
+    
+    padding: 8px;
+    background: #456da0;
+    color: #fff;
+    border: 1px solid #456da0;
+    
+    
+    display: block;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.button_to-cart:hover {
+    border-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
